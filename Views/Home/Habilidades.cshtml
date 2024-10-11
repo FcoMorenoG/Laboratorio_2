@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = "Habilidades";
+    @Styles.Render("~/Content/Site.css");
+}
+<nav>
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <ul>
+                <li>@Html.ActionLink("Datos", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Experiencia", "Experiencia", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Formacion", "Formacion", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Habilidades", "Habilidades", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Repositos", "Repositos", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Desarrollador", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+
+    <section class="titulo" aria-labelledby="aspnetTitle">
+        <h1 id="title">Francisco Moreno</h1>
+    </section>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 class="lead">Habilidades</h2>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Conocimientos en informatica</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="resumen" aria-labelledby="gettingStartedTitle">
+            <p>Tengo conocimiento en los lenguajes de programacion: Visual Basic, C#, C++, Phyton y en el mantenimiento de computadoras</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Cualidades</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="resumen" aria-labelledby="gettingStartedTitle">
+            <p>Empatia, Responsabilidad, Respeto, Amabilidad, Puntualidad.</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Referencia Familiar</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Nombre:</h2>
+            <p>Daniela Alejandra Torres Guzman</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Parentesco:</h2>
+            <p>Compañera de Vida</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Telefono:</h2>
+            <p>7219-4818</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Referencia Laboral</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Nombre:</h2>
+            <p>Josue David Vasquez Morales</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Puesto:</h2>
+            <p>Jefe de Compras Publicas</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Telefono:</h2>
+            <p>2530-3969</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Referencia Personal</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Nombre:</h2>
+            <p>Oscar Jacobo Alvarenga</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Parentesco:</h2>
+            <p>Amigo</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Telefono:</h2>
+            <p>2530-3973</p>
+        </section>
+    </div>
+</main>
+<div class="container body-content">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Francisco Moreno</p>
+    </footer>
+</div>

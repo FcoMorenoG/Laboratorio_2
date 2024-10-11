@@ -1,0 +1,142 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    @Styles.Render("~/Content/Site.css");
+}
+<nav>
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <ul>
+                <li>@Html.ActionLink("Datos", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Experiencia", "Experiencia", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Formacion", "Formacion", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Habilidades", "Habilidades", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Repositos", "Repositos", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Desarrollador", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+
+    <section class="titulo" aria-labelledby="aspnetTitle">
+        <h1 id="title">Francisco Moreno</h1>
+    </section>
+    <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+        <img src="~/Foto.jpg" alt="Fotografia de francisco" width="250" height="300">
+    </section>
+
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Datos Generales</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Nombre:</h2>
+            <p>Francisco Salvador</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <h2 id="librariesTitle">Apellidos:</h2>
+            <p>Moreno Garcia</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Sexo:</h2>
+            <p>Masculino</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Edad:</h2>
+            <p>35 años</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Estado Civil:</h2>
+            <p>Union Libre</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Nacionalidad:</h2>
+            <p>Salvadoreña</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Sexo:</h2>
+            <p>Masculino</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Contacto</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">Telefono:</h3>
+            <p>+503 7819-4396</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">Correo electronico:</h3>
+            <p>fransalvadormoreno@gmail.com</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">Departamento:</h3>
+            <p>San Salvador</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">Municipio:</h3>
+            <p>San Salvador Centro</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">Distrito:</h3>
+            <p>San Salvador</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Documentos</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">DUI:</h3>
+            <p>04018206-2</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">NIT:</h3>
+            <p>04018206-2</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">NUP:</h3>
+            <p>324722240007</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">ISSS:</h3>
+            <p>108888069</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h3 id="hostingTitle">Tipo de licencia:</h3>
+            <p>Motocicleta, Liviana</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Resumen Profesional</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="resumen" aria-labelledby="hostingTitle">
+            <p>
+                Soy estudiante de la carrera de Licenciatura en Computacion de la Universidad Dr. Andres Bello, laboro para la
+                Direccion de Desechos Solidos de la Alcaldia de San Salvador Centro desde hace 13 años, me he desempeñado en distintas
+                areas, actualmente mi puesto es de Tecnico de Compras Publicas, tengo un hijo de 10 años.
+            </p>
+        </section>
+    </div>
+</main>
+<div class="container body-content">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Francisco Moreno</p>
+    </footer>
+</div>

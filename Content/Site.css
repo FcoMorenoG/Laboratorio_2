@@ -1,0 +1,238 @@
+﻿/* Set padding to keep content from hitting the edges 
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default 
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+*/
+/* Estilos generales */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para secciones */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.titulo {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.temas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    color: seagreen;
+    font-size: 25px;
+}
+.imagen {
+    /*display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;*/
+    width: 20px;
+    height: 20px;
+}
+.col-md-4 {
+    flex: 0 0 33.333%;
+    padding: 15px;
+}
+.experiencia {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.resumen {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.col-md-4 img {
+        flex: 0 0 33.333%;
+        padding: 15px;
+        display: block; /* Cambia a bloque */
+        margin: 0 auto;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.lead {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los párrafos */
+p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%; /* Colapsar a una columna en pantallas pequeñas */
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+.nav-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.body-content {
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+    form label {
+        margin: 10px 0 5px;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    form button {
+        padding: 10px;
+        background: #00bd3f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+form button:hover {
+     background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.proyecto {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+    .proyecto:hover {
+        transform: scale(1.02);
+    }
+
+    .proyecto a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background: #00bd3f;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+        .proyecto a:hover {
+            background: #0056b3;
+        }

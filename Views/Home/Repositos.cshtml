@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Repositos";
+    @Styles.Render("~/Content/Site.css");
+}
+
+<nav>
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <ul>
+                <li>@Html.ActionLink("Datos", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Experiencia", "Experiencia", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Formacion", "Formacion", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Habilidades", "Habilidades", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Repositos", "Repositos", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Desarrollador", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+
+    <section class="titulo" aria-labelledby="aspnetTitle">
+        <h1>Francisco Moreno</h1>
+    </section>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 class="lead">Repositos</h2>
+        </section>
+    </div>
+    <section id="proyectos">
+        <h2>Proyecto</h2>
+        <div class="proyecto">
+            <h3>Sistema de Estacionamiento en Visual Basic</h3>
+            <p>
+                Es un sistema que permite la gestion de estacionamiento conectado a una base de datos de mysql,
+                el cual permite gestionar los espacios de estacionamiento y realizar los cobros de conformidad
+                a la hora que ingreso y a la hora que sale.
+            </p>
+            <a href="https://github.com/FcoMorenoG">Ver Proyecto</a>
+        </div>
+    </section>
+</main>

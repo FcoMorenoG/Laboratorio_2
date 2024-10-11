@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Formacion";
+    @Styles.Render("~/Content/Site.css");
+}
+<nav>
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <ul>
+                <li>@Html.ActionLink("Datos", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Experiencia", "Experiencia", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Formacion", "Formacion", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Habilidades", "Habilidades", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Repositos", "Repositos", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Desarrollador", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+
+    <section class="titulo" aria-labelledby="aspnetTitle">
+        <h1 id="title">Francisco Moreno</h1>
+    </section>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 class="lead">Formacion</h2>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Educacion Superior</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Institucion:</h2>
+            <p>Universidad Dr. Andres Bello</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <h2 id="librariesTitle">Carrera:</h2>
+            <p>Licenciatura en Computacion</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Ingreso:</h2>
+            <p>2022</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Finalizacion:</h2>
+            <p>Actualmente</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Educacion Media</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Institucion:</h2>
+            <p>Instituto Nacional de San Marcos</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="librariesTitle">
+            <h2 id="librariesTitle">Opcion:</h2>
+            <p>Bachillerato Tecnico Industrial Opcion: Electronica</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Ingreso:</h2>
+            <p>2004</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Finalizacion:</h2>
+            <p>2007</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Educacion Basica</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+        <h2 id="gettingStartedTitle">Institucion:</h2>
+        <p>Centro Escolar Catolico Hogar del Niño</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Ingreso:</h2>
+            <p>1998</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Finalizacion:</h2>
+            <p>2006</p>
+        </section>
+    </div>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <p class="lead">Educacion Parvularia</p>
+        </section>
+    </div>
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Institucion:</h2>
+            <p>Centro Escolar Catolico Hogar del Niño</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Ingreso:</h2>
+            <p>1995</p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">Finalizacion:</h2>
+            <p>1997</p>
+        </section>
+    </div>
+</main>
+<div class="container body-content">
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Francisco Moreno</p>
+    </footer>
+</div>

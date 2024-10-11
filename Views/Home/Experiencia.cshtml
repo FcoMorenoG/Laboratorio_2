@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Experiencia";
+    @Styles.Render("~/Content/Site.css");
+}
+
+<nav>
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <ul>
+                <li>@Html.ActionLink("Datos", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Experiencia", "Experiencia", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Formacion", "Formacion", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Habilidades", "Habilidades", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Repositos", "Repositos", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Desarrollador", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main>
+
+    <section class="titulo" aria-labelledby="aspnetTitle">
+        <h1>Francisco Moreno</h1>
+    </section>
+    <div class="temas">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 class="lead">Experiencia Laboral</h2>
+        </section>
+    </div>
+    <section id="experiencia">
+        <div class="row">
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h3 id="hostingTitle">Institucion:</h3>
+                <p>Direccion Municipal para la Gestion Sustentable de Desechos Solidos</p>
+            </section>
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h3 id="hostingTitle">Cargo:</h3>
+                <p>Tecnico de Compras Publicas</p>
+            </section>
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h3 id="hostingTitle">Temporalidad:</h3>
+                <p>Desde enero 2011 hasta Actualidad</p>
+            </section>
+            <section class="col-md-4" aria-labelledby="hostingTitle">
+                <h3 id="hostingTitle">Funciones:</h3>
+                <p>Gestionar las adquisiciones y contrataciones de la institucion, utilizando la normativa legal vigente</p>
+            </section>
+        </div>
+    </section>
+</main>
